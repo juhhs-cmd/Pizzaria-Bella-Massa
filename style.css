@@ -1,21 +1,53 @@
-* {
+@charset "UTF=8";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Praise&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+body {
+background-color: #ffffff;
+
+}
+
+.logo {
+    font-family: "Praise", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: #ffffff;
+
+}
+
+h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
 
 header {
     background-color: #e51a24;
     color: white;
-    display: flex;
+    
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 5px 40px;
 }
 
-.logo {
-    font-size: 24px;
+.container {
+    max-width: 1440px;
+    padding: 0 5%;
+    margin: 0 auto;
 }
 
 .menu-topo {
@@ -36,8 +68,8 @@ header {
 
 .hero-destaque {
     background-color: #d0121c;
-    color: white;
-    padding: 60px 40px;
+    color: #ffffff;
+    padding: 40px 40px;
     text-align: left;
 }
 
@@ -46,19 +78,19 @@ header {
 }
 
 .hero-destaque h2 {
-    font-size: 38px;
+    font-size: 35px;
     margin-bottom: 15px;
 }
 
 .hero-destaque p {
-    font-size: 18px;
-    margin-bottom: 25px;
+    font-size: 16px;
+    margin-bottom: 35px;
 }
 
 .btn-branco {
     background-color: white;
     color:#d0121c;
-    padding:10px 30px;
+    padding:10px 20px;
     border-radius: 30px;
     text-decoration: none;
     text-decoration: none;
@@ -70,3 +102,203 @@ header {
 .btn-branco:hover {
     background-color: #f1f1f1;
 }
+
+.btn-branco {
+     background-color: white;
+    color:#d0121c;
+    padding:10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-branco:hover {
+    background-color: #fffefe;
+}
+
+nav {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.ul {
+    display: flex;
+    align-items: center;
+  
+}
+
+.ul li {
+    margin: 0 50px;
+     font-size: 14px;
+}
+
+.ul li a{
+    color: #ffffff;
+}
+
+/* MAIN */
+
+main .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.main-text {
+    width: 50%;
+    color: #910707;
+}
+
+.main-text h2 {
+
+    font-size: 4.5rem;
+}
+
+.main-text div {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.main-img {
+    width: 100%;
+}
+
+.main-img img {
+    width: 100%;
+}
+
+
+/* Menu Icon Para Responsividade*/
+
+.menu-icon {
+    display: none;
+}
+
+/* Conheça nossos produtos */
+
+.produtos {
+    background-color: #790000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.produtos .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.produtos .produtos-text {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bold;
+    font-style: normal;
+    color: white;
+    font-size: 1.6rem;
+    width: 50%;
+}
+
+.card01 .container {
+    display: flex;
+    justify-content: space-between ;
+    margin: 30px auto;
+}
+
+.card01 .card {
+    width: 30%;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #e2e2e2;
+}
+
+.card01 .card .titulo {
+    margin: 13 0; 
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bold;
+    font-style: normal;
+    color: #d0121c;
+    font-size: 1.4rem;
+    width: 50%;
+}
+
+.btn-vermelho {
+     background-color: white;
+    color:#d0121c;
+    padding:10px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-vermelho:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* Portifolio */
+
+.portifolio .container {
+    display: flex;
+    align-items: center;
+}
+
+.portifolio .casa-img {
+    width: 50%;
+}
+
+.portifolio .casa-img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.portifolio .portifolio-text {
+    width: 50%;
+    padding-left: 7px;
+}
+
+.portifolio .portifolio-text h2 {
+    font-size: 2.5em;
+}
+
+.portifolio .portifolio-text p {
+    margin: 20px 0;
+}
+
+.portifolio .portifolio-text p b{
+    color: #000000;
+    font-size: 18px;
+}
+
+/* Responsivo, Ainda irei arrumar */
+
+@media (max-widht: 960px) {
+   .menu-icon {
+    display: block;
+}
+.ul  {
+    position: fixed;
+    background-color: #790000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    transition: 0.3;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .ul li {
+        font-size: 30px;
+        margin: 20px 0;
+    }
+    }
