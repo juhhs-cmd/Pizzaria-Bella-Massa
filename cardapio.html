@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Massa | Cardápio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    Bella Massa
+                </div>
+
+                <ul class="ul">
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="cardapio.html">Cardápio</a></li>
+                    <li> <a href="#">Sobre Nós</a></li>
+                    <li> <a href="#">Portifólio</a></li>
+                    <li><a href="#"> <button class="btn-branco">Login</button> </a></li>
+                </ul>
+
+                <div class="menu-icon">
+                    <img src="img/menu.png" alt="Menu">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="cardapio-main">
+        <div class="container">
+            
+            <div class="cardapio-topo">
+                <div class="categorias-filtros">
+                    <button class="filtro-btn active" onclick="filtrar('todos')">Todos</button>
+                    <button class="filtro-btn" onclick="filtrar('pizzas')">Pizzas</button>
+                    <button class="filtro-btn" onclick="filtrar('combos')">Combos</button>
+                    <button class="filtro-btn" onclick="filtrar('sobremesas')">Sobremesas</button>
+                </div>
+
+                <div class="busca-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="inputBusca" onkeyup="buscarItem()" placeholder="Buscar item...">
+                </div>
+            </div>
+
+            <div class="produtos-grid-cardapio">
+                
+                <div class="card-produto" data-categoria="pizzas">
+                    <div class="card-img-topo">
+                        <span class="tag-categoria">PIZZAS</span>
+                        <!-- Substitua pelo caminho da sua imagem -->
+                        <div class="img-placeholder pizza-1"></div> 
+                    </div>
+                    <div class="card-corpo">
+                        <h3>Pizza Margherita Suprema</h3>
+                        <p>Molho de tomate artesanal, mozzarella fresca de búfala, manjericão colhido na hora e azeite extra virgem.</p>
+                        <div class="card-footer">
+                            <span class="preco">R$ 54,90</span>
+                            <button class="btn-adicionar">+ Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-produto" data-categoria="pizzas">
+                    <div class="card-img-topo">
+                        <span class="tag-categoria">PIZZAS</span>
+                        <div class="img-placeholder pizza-2"></div>
+                    </div>
+                    <div class="card-corpo">
+                        <h3>Pizza Pepperoni Especial</h3>
+                        <p>Generosas fatias de pepperoni importado, mozzarella derretida e nosso molho especial da casa.</p>
+                        <div class="card-footer">
+                            <span class="preco">R$ 62,90</span>
+                            <button class="btn-adicionar">+ Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-produto" data-categoria="combos">
+                    <div class="card-img-topo">
+                        <span class="tag-categoria combo-tag">COMBOS</span>
+                        <div class="img-placeholder combo-1"></div>
+                    </div>
+                    <div class="card-corpo">
+                        <h3>Combo Família Bella</h3>
+                        <p>1 Pizza Grande de sua preferência + 1 Refri 2L + 1 Pizza Doce Pequena de Chocolate.</p>
+                        <div class="card-footer">
+                            <span class="preco">R$ 79,90</span>
+                            <button class="btn-adicionar">+ Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="card-produto" data-categoria="pizzas">
+                    <div class="card-img-topo">
+                        <span class="tag-categoria pizza-tag">PIZZAS</span>
+                        <div class="img-placeholder pizza-3"></div>
+                    </div>  
+                    <div class="card-corpo">
+                        <h3>Pizza Quatro Queijos</h3>
+                        <p>Quatro queijos selecionados, mozzarella, parmesão, provolone e gorgonzola.</p>
+                        <div class="card-footer">
+                            <span class="preco">R$ 59,90</span>
+                            <button class="btn-adicionar">+ Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="card-produto" data-categoria="pizzas">
+                    <div class="card-img-topo">
+                    <span class="tag-categoria pizza-tag">PIZZAS</span>
+                         <div class="img-placeholder pizza-4"></div>
+                    </div>
+                    <div class="card-corpo">
+                        <h3>Pizza Portuguesa</h3>
+                        <p>Molho de tomate, mussarela, presunto e cebola.</p>
+                        <div class="card-footer">
+                            <span class="preco">R$ 49,90</span>
+                            <button class="btn-adicionar">+ Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="card-produto" data-categoria="pizzas">
+                    <div class="card-img-topo">
+                        <span class="tag-categoria">PIZZAS</span>
+                        <div class="img-placeholder pizza-5"></div>
+                    </div>
+                    <div class="card-corpo">
+                        <h3>Pizza Calabresa da Casa</h3>
+                        <p>Fatias selecionadas de calabresa defumada, cebolas roxas finamente cortadas, azeitonas e oregano.</p>
+                        <div class="card-footer">
+                            <span class="preco">R$ 49,90</span>
+                            <button class="btn-adicionar">+ Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="card-produto" data-categoria="sobremesas">
+                        <div class="card-img-topo">
+                            <span class="tag-categoria">SOBREMESAS</span>
+                            <div class="img-placeholder sobremesa-1"></div>
+                        </div>
+                        <div class="card-corpo">
+                            <h3>Pizza de Chocolate</h3>
+                            <p>Massa crocante coberta com generosas camadas de chocolate cremoso e confeitos de chocolate.</p>
+                            <div class="card-footer">
+                                <span class="preco">R$ 42,90</span>
+                                <button class="btn-adicionar">+ Adicionar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-produto" data-categoria="sobremesas">
+                    <div class="card-img-topo">
+                        <span class="tag-categoria" >SOBREMESAS</span>
+                        <div class="img-placeholder sobremesa-2"></div>
+                    </div>
+                    <div class="card-corpo">
+                            <h3>Pizza de Banoffee</h3>
+                        <p>Doce de leite artesanal cremoso, rodelas de banana fresquinhas e um toque especial de canela.</p>
+                        <div class="card-footer">
+                            <span class="preco">R$ 46,90</span>
+                            <button class="btn-adicionar">+ Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="card-produto" data-categoria="sobremesas">
+                    <div class="card-img-topo">
+                        <span class="tag-categoria" >SOBREMESAS</span>
+                        <div class="img-placeholder sobremesa-3"></div>
+                    </div>
+                    <div class="card-corpo">
+                        <h3>Pizza Romeu e Julieta</h3>
+                        <p>Cremosa camada de requeijão ou cream cheese misturado com pasta de goiabada cascão derretida.</p>
+                        <div class="card-footer">
+                            <span class="preco">R$ 42,90</span>
+                            <button class="btn-adicionar">+ Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+                            
+                <div class="card-produto" data-categoria="sobremesas">
+                    <div class="card-img-topo">
+                        <span class="tag-categoria" >SOBREMESAS</span>
+                        <div class="img-placeholder sobremesa-4"></div>
+                    </div>
+                    <div class="card-corpo">
+                        <h3>Pizza Doce de Leite com Nozes</h3>
+                        <p>Fino doce de leite pastoso coberto com pedaços crocantes de nozes selecionadas.</p>
+                        <div class="card-footer">
+                            <span class="preco">R$ 48,90</span>
+                            <button class="btn-adicionar">+ Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-produto" data-categoria="sobremesas">
+                    <div class="card-img-topo">
+                        <span class="tag-categoria" >SOBREMESAS</span>
+                        <div class="img-placeholder sobremesa-5"></div>
+                    </div>
+                    <div class="card-corpo">
+                        <h3>Pizza de Prestígio</h3>
+                        <p>Camada generosa de chocolate derretido coberta com coco ralado fresco em flocos.</p>
+                        <div class="card-footer">
+                            <span class="preco">R$ 43,90</span>
+                            <button class="btn-adicionar">+ Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="card-produto" data-categoria="combos">
+                    <div class="card-img-topo">
+                        <span class="tag-categoria" >COMBOS</span>
+                    </div>
+                    <div class="card-corpo">
+                        <h3>Combo Dupla Imperdível</h3>
+                        <p>2 Pizzas Médias salgadas (sabores tradicionais) + 1 Guaraná ou Coca-Cola de 2 litros.</p>
+                        <div class="card-footer">
+                            <span class="preco">R$ 89,90</span>
+                            <button class="btn-adicionar">+ Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-produto" data-categoria="combos">
+                    <div class="card-img-topo">
+                        <span class="tag-categoria">COMBOS</span>
+                    </div>
+                    <div class="card-corpo">
+                        <h3>Combo Fim de Semana Total</h3>
+                        <p>2 Pizzas Grandes + 1 Pizza Doce Grande de Chocolate + 1 Refri 2L.</p>
+                        <div class="card-footer">
+                            <span class="preco">R$ 129,90</span>
+                            <button class="btn-adicionar">+ Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-produto" data-categoria="pizzas">
+                    <div class="card-img-topo">
+                        <span class="tag-categoria">PIZZAS</span>
+                    </div>
+                    <div class="card-corpo">
+                        <h3>Pizza Frango com Catupiry</h3>
+                        <p>Peito de frango desfiado, temperado ao estilo da casa, coberto com generosas porções de Catupiry original.</p>
+                        <div class="card-footer">
+                            <span class="preco">R$ 55,90</span>
+                            <button class="btn-adicionar">+ Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        function filtrar(categoria) {
+            const botoes = document.querySelectorAll('.filtro-btn');
+            botoes.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            const cards = document.querySelectorAll('.card-produto');
+            cards.forEach(card => {
+                if (categoria === 'todos' || card.dataset.categoria === categoria) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
