@@ -532,9 +532,10 @@ input {
 
 .product-image img {
     width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
+    height: 100;
+    object-fit: cover; /* Faz a imagem ocupar 100% da caixa uniformemente */
+    transform: scale(0.95)/* Reduz um bocadinho (para 85%) para garantir que nenhuma borda da pizza seja cortada fora da caixa */
+    object-position: center;
 }
 
 .product-image span {
@@ -1429,4 +1430,34 @@ footer .container {
     footer {
         padding: 45px 0 25px;
     }
+}
+
+#/* Padroniza a caixa de imagem de todos os combos */
+#combos .product-card .product-image {
+    height: 140px; /* Altere este valor se quiser a imagem um pouco maior ou menor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Força a imagem a preencher a largura de forma uniforme e proporcional */
+#combos .product-card .product-image img {
+    width: 85%; /* Ajuste a porcentagem se quiser a imagem mais cheia (ex: 90%) ou mais recuada (ex: 80%) */
+    height: 100%;
+    object-fit: contain; /* Garante que a imagem inteira apareça sem distorcer */
+}
+
+#combos .product-card:nth-child(1) .product-image img {
+    transform: scale(1.21); /* Reduzi de 1.3 para 1.15 para ficar equivalente ao outro */
+}
+
+#combos .product-card:nth-child(3) .product-image img {
+    transform: scale(1.35); /* Aumenta o tamanho interno para preencher o espaço igual aos outros */
+    object-fit: contain;
+}
+
+#combos .product-card:nth-child(4) .product-image img {
+    transform: scale(1.3); /* Ajuste para 1.25 ou 1.35 se precisar afinar mais */
+    object-fit: contain;
 }
