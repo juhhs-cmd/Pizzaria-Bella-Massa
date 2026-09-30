@@ -3,35 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bella Massa | Pizzaria</title>
+    <title>Bella Massa</title>
+
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="favicon_io/favicon-32x32.png" type="image/x-icon">
 </head>
+
 
 <body>
 
-<header class="site-header">
-    <div class="container">
-        <nav class="navbar">
-            <a href="index.html" class="logo">Bella Massa</a>
 
-            <ul class="nav-links">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="cardapio.html">Cardápio</a></li>
-                <li><a href="sobrenos.html">Sobre Nós</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a class="btn btn-light" href="#">Login</a></li>
-            </ul>
+<header class="site-header"> 
+    <div class="container"> 
+        <nav class="navbar"> 
 
-            <button class="menu-toggle" type="button" aria-label="Abrir menu">
-                <i class="bi bi-list"></i>
-            </button>
-        </nav>
-    </div>
+            <a href="index.html" class="logo">Bella Massa</a> 
+ 
+            <ul class="nav-links"> 
+
+                <li>
+                    <a class="active" href="index.html">Home</a>
+                </li> 
+
+                <li>
+                    <a href="cardapio.html">Cardápio</a>
+                </li> 
+
+                <li>
+                    <a href="sobrenos.html">Sobre Nós</a>
+                </li> 
+
+                <li>
+                    <a href="portfolio.html">Portfólio</a>
+                </li>
+
+                <!-- CARRINHO -->
+                <li>
+                    <a href="#carrinho" class="cart-icon" aria-label="Carrinho de compras">
+                        <i class="bi bi-cart2"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="btn btn-light" href="#">Login</a>
+                </li> 
+
+            </ul> 
+ 
+            <button class="menu-toggle" type="button" aria-label="Abrir menu"> 
+                <i class="bi bi-list"></i> 
+            </button> 
+
+        </nav> 
+    </div> 
 </header>
 
+
 <main>
+
 
     <section class="hero">
         <div class="container hero-content">
@@ -40,25 +71,30 @@
                 <h1>A melhor pizza da cidade <span>na sua casa!</span></h1>
                 <p>Massa quentinha, ingredientes frescos e muito sabor em cada pedaço.</p>
 
+
                 <div class="hero-actions">
                     <a href="cardapio.html" class="btn btn-primary">Peça agora</a>
-                    <a href="#produtos" class="btn btn-outline">Conheça o cardápio</a>
+                    
                 </div>
             </div>
 
+
             <div class="hero-image">
-                <img src="img/gemini.jpg" alt="Pizza da Bella Massa">
+                <img src="img/pizza-home.png" alt="Pizza da Bella Massa">
             </div>
         </div>
     </section>
 
-    <section class="products-preview" id="produtos">
+
+<section class="products-preview" id="produtos">
         <div class="container">
             <div class="section-heading">
-                <span>Nosso cardápio</span>
-                <h2>Escolha o seu momento de felicidade</h2>
-                <p>Do clássico ao especial, temos opções para todos os gostos.</p>
+             
+                <h2> Escolha o seu momento de felicidade!</h2>
+                   <span>Nosso cardápio</span>
+               
             </div>
+
 
             <div class="category-cards">
                 <article class="category-card">
@@ -68,12 +104,14 @@
                     <a href="cardapio.html#pizzas" class="card-link">Ver pizzas <i class="bi bi-arrow-right"></i></a>
                 </article>
 
+
                 <article class="category-card">
                     <div class="category-icon"><i class="bi bi-basket2-fill"></i></div>
                     <h3>Combos</h3>
                     <p>Combinações pensadas para deixar seu pedido mais completo e gostoso.</p>
                     <a href="cardapio.html#combos" class="card-link">Ver combos <i class="bi bi-arrow-right"></i></a>
                 </article>
+
 
                 <article class="category-card">
                     <div class="category-icon"><i class="bi bi-heart-fill"></i></div>
@@ -85,11 +123,14 @@
         </div>
     </section>
 
+
+
     <section class="about-section" id="sobre">
         <div class="container about-content">
             <div class="about-image">
-                <img src="img/casa.png" alt="Ambiente da Bella Massa">
+                <img src="img/resturante-bellamassa.png" alt="Ambiente da Bella Massa">
             </div>
+
 
             <div class="about-text">
                 <span class="eyebrow">Sobre a Bella Massa</span>
@@ -99,6 +140,7 @@
                     em um momento especial. Nossa proposta une receitas clássicas,
                     ingredientes selecionados e um atendimento acolhedor.
                 </p>
+
 
                 <div class="about-stats">
                     <div>
@@ -111,10 +153,12 @@
                     </div>
                 </div>
 
-                <a href="#portfolio" class="btn btn-primary">Conheça nossa história</a>
+
+                <a href="sobrenos.html" class="btn btn-primary">Conheça nossa história</a>
             </div>
         </div>
     </section>
+
 
             <!-- ================= PORTFÓLIO / AVALIAÇÕES ================= -->
         <section class="portfolio" id="portfolio">
@@ -128,7 +172,9 @@
                     </p>
                 </div>
 
+
                 <div class="avaliacoes-grid">
+
 
                     <article class="avaliacao-card">
                         <div class="estrelas" aria-label="5 estrelas">★★★★★</div>
@@ -138,14 +184,16 @@
                             vou pedir novamente!”
                         </p>
 
+
                         <div class="cliente">
                             <div class="cliente-inicial">M</div>
                             <div>
-                                <strong>Mariana S.</strong>
+                                <strong>Mariana Silva</strong>
                                 <span>Cliente Bella Massa</span>
                             </div>
                         </div>
                     </article>
+
 
                     <article class="avaliacao-card">
                         <div class="estrelas" aria-label="5 estrelas">★★★★★</div>
@@ -154,14 +202,16 @@
                             Os ingredientes estavam frescos e a entrega foi rápida.”
                         </p>
 
+
                         <div class="cliente">
                             <div class="cliente-inicial">R</div>
                             <div>
-                                <strong>Rafael M.</strong>
+                                <strong>Rafael Moura</strong>
                                 <span>Cliente Bella Massa</span>
                             </div>
                         </div>
                     </article>
+
 
                     <article class="avaliacao-card">
                         <div class="estrelas" aria-label="5 estrelas">★★★★★</div>
@@ -170,18 +220,21 @@
                             bem montada e a sobremesa fechou o pedido perfeitamente.”
                         </p>
 
+
                         <div class="cliente">
                             <div class="cliente-inicial">J</div>
                             <div>
-                                <strong>Juliana A.</strong>
+                                <strong>Juliana Ferraz</strong>
                                 <span>Cliente Bella Massa</span>
                             </div>
                         </div>
                     </article>
 
+
                 </div>
             </div>
         </section>
+
 
     <section class="portfolio-section" id="portfolio">
         <div class="container portfolio-content">
@@ -194,13 +247,17 @@
                 </p>
             </div>
 
+
         </div>
     </section>
 
+
 </main>
+
 
 <footer>
     <div class="container">
+
 
         <section class="footer-top">
             <div class="footer-brand">
@@ -208,13 +265,15 @@
                 <p>Na Bella Massa, cada pizza é preparada com ingredientes selecionados e muito carinho.</p>
             </div>
 
+
             <div class="footer-column">
                 <h3>Sobre Nós</h3>
                 <div class="footer-links">
-                    <a href="#sobre">Nossa história</a>
-                    <a href="#portfolio">Portfólio</a>
+                    <a href="sobrenos.html">Nossa história</a>
+                    <a href="portfolio.html">Portfólio</a>
                 </div>
             </div>
+
 
             <div class="footer-column">
                 <h3>Suporte</h3>
@@ -225,6 +284,7 @@
                 </div>
             </div>
 
+
             <div class="footer-column">
                 <h3>Termos</h3>
                 <div class="footer-links">
@@ -233,6 +293,7 @@
                     <a href="#">Tabela nutricional e alergênicos</a>
                 </div>
             </div>
+
 
             <div class="footer-column">
                 <h3>Siga-nos</h3>
@@ -245,6 +306,7 @@
             </div>
         </section>
 
+
         <section class="footer-bottom">
             <p>
                 Endereço: Rua das Palmeiras, 150 – São Paulo/SP<br>
@@ -254,8 +316,10 @@
             <p>Copyright &copy; 2026 | Todos os direitos reservados.</p>
         </section>
 
+
     </div>
 </footer>
+
 
 </body>
 </html>
